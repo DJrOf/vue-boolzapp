@@ -68,6 +68,18 @@ header {
     padding: 0;
 }
 
+.search {
+    height: 45px;
+    background-color: bisque;
+}
+
+#searchbar {
+    height: 45px;
+    width: 100%;
+    text-align: left;
+    padding: 1%;
+}
+
 ul {
     margin: 0;
     padding: 0;
