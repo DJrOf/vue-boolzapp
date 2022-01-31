@@ -31,9 +31,15 @@
                             <div class="search">
                                 <input type="text" id="searchbar" placeholder="Cerca tra le tue chat" >
                             </div>
-                            <ul>
-                                <li></li>
-                            </ul>
+                            <div class="activechats">
+                                <ul id="activechats">
+                                    <li v-for="contact in contacts" :key="contact.name">
+                                      {{ contact.name }}
+                                      {{ contact.avatar }}
+                                      <hr>
+                                    </li>
+                                  </ul>
+                            </div>
                         </div>
                     </div>
                 </col>
