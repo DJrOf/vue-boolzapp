@@ -1,0 +1,76 @@
+body {
+  background: linear-gradient(to bottom,
+     green 20%, black 20% 80%);
+     background-repeat: no-repeat;
+     height: 100vh;
+     padding: 40px;
+}
+
+header {
+    height: 70px;
+    border: 1px solid white;
+   display: flex;
+   vertical-align: middle;
+   padding: 1%;
+   background-color: grey;
+}
+
+#profpic {
+    width: 60px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.container {
+    height: 80vh;
+    width: 60vw;
+    border: 1px solid white;
+    padding-left: 0;
+    padding: 0;
+}
+
+#maincont {
+  
+}
+
+.row {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+
+.sidebar {
+    height: 80vh;
+    width: 25vw;
+    border: 1px solid white;
+    margin: 0;
+}
+
+.zappbody {
+    height: 80vh;
+    border: 1px solid white;
+    margin: 0;
+    width: 35vw;
+    position: absolute;
+   left: 648px;
+}
+
+main {
+    height: 415px;
+    background-image: url(img/mine.jpg);
+}
+
+#txt {
+    height: 80px;
+    width: 35vw;
+    text-align: center;
+   
+}
+
+footer {
+    height: 80px;
+ 
+    
+
+}
