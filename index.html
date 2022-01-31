@@ -34,8 +34,9 @@
                             <div class="activechats">
                                 <ul id="activechats">
                                     <li v-for="contact in contacts" :key="contact.name">
-                                      {{ contact.name }}
-                                      {{ contact.avatar }}
+                                         <!-- <img :src="'/img/' + 'avatar' + {{ contact.avatar }}" /> -->
+                                        {{ contact.avatar }}
+                                        {{ contact.name }}
                                       <hr>
                                     </li>
                                   </ul>
