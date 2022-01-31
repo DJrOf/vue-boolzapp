@@ -9,34 +9,49 @@
     rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
-    <div class="container" id="maincont">
-        <div class="row" id="mainrow">
-            <col>
-                <div class="sidebar">
-                    <header>
-                        <div class="sideleft">
-                            <img src="img/avatar_io.jpg" id="profpic" alt="">
-                            <span>Gianluigi Bombatomica</span>
+    <div id="root">
+        <div class="container" id="maincont">
+            <div class="row" id="mainrow">
+                <col>
+                    <div class="sidebar">
+                        <header>
+                            <div>
+                                <img src="img/avatar_io.jpg" id="profpic" alt="">
+                                <span>Gianluigi Bombatomica</span>
+                            </div>
+                        </header>
+                        <div class="notifications">
+    
                         </div>
-                        
-                    </header>
-                </div>
-            </col>
-            <col>
-                <div class="zappbody">
-                    <header></header>
-                    <main></main>
-                    <footer><input type="text" id="txt" placeholder="Scrivi qui il tuo messaggio" ></footer>
-                </div>
-            </col>
+                        <div class="chats">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </col>
+                <col>
+                    <div class="zappbody">
+                        <header>
+                            <div>
+                                <img src="img/avatar_io.jpg" id="profpic" alt="">
+                                <span>Gianluigi Bombatomica</span>
+                            </div>
+                        </header>
+                        <main></main>
+                        <footer><input type="text" id="txt" placeholder="Scrivi qui il tuo messaggio" ></footer>
+                    </div>
+                </col>
+            </div>
+            
+            
         </div>
-        
-        
     </div>
+    
     <script src="js/script.js"></script>
 </body>
 </html>
