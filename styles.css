@@ -107,6 +107,6 @@ footer {
 #txt {
     height: 30%;;
     width: 35vw;
-    text-align: center;
-
+    text-align: left;
+    padding: 1%;
 }
