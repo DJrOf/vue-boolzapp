@@ -9,8 +9,7 @@
     rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
     <div id="root">
@@ -18,26 +17,26 @@
             <div class="row" id="mainrow">
                 <col>
                     <div class="sidebar">
-                        <header>
-                            <div>
-                                <img src="img/avatar_io.jpg" id="profpic" alt="">
-                                <span>Gianluigi Bombatomica</span>
+                        <header >
+                            <div class="head">
+                                <img :src="'img' + '/avatar' + user.avatar + '.jpg'" id="profpic"/>
+                                <span>{{ user.name }}</span>
                             </div>
                         </header>
                         <div class="notifications">
-    
+                            <i class="fa-solid fa-bell-slash"></i>
+                        </div>
+                        <div class="search">
+                            <input type="text" id="searchbar" placeholder="Cerca tra le tue chat" >
                         </div>
                         <div class="chats">
-                            <div class="search">
-                                <input type="text" id="searchbar" placeholder="Cerca tra le tue chat" >
-                            </div>
+                            
                             <div class="activechats">
                                 <ul id="activechats">
                                     <li v-for="contact in contacts" :key="contact.name">
-                                         <img :src="'/img/' + 'avatar' + {{ contact.avatar }} + '.jpg" id="profpic"/>
-                                        {{ contact.avatar }}
+                                         <img :src="'img' + '/avatar' + contact.avatar + '.jpg'" id="profpic"/>
                                         {{ contact.name }}
-                                      <hr>
+                                        <hr>
                                     </li>
                                   </ul>
                             </div>
@@ -46,16 +45,21 @@
                 </col>
                 <col>
                     <div class="zappbody">
-                        <header>
-                            <div>
-                                <img src="img/avatar_io.jpg" id="profpic" alt="">
-                                <span>Gianluigi Bombatomica</span>
+                        <header >
+                            <div class="head">
+                                <img :src="'img' + '/avatar' + contacts[0].avatar + '.jpg'" id="profpic"/>
+                                <span>{{ contacts[0].name }}</span>
+                                <span>Ultimo accesso oggi alle</span>
                             </div>
                         </header>
-                        <main></main>
-                        <footer>
+                        <main>
+                            <div class="send"><p>Bella, Earl!</p></div>
+                            <div class="receive"><p>Heilà, Gamberone!</p></div>
+                        </main>
+                        <div class="footer">
+                            <i class="far fa-smile"></i>
                             <input type="text" id="txt" placeholder="Scrivi qui il tuo messaggio" >
-                        </footer>
+                        </div>
                     </div>
                 </col>
             </div>

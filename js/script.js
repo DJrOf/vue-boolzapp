@@ -25,6 +25,17 @@ new Vue({
               avatar: '_4',
             },
           ],
-      
+          newMsgs: '',
+          methods: {
+            
+            addMsg() {
+                const newMsgs = this.newMsgs.trim();
+                if (newMsgs) {
+                    this.newMsg.push({ text: newMsgs, done: false }
+                    );
+            }
+            this.newMsgs = '';
+        },
+    }
     }
   })
