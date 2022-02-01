@@ -1,6 +1,6 @@
-Vue.config.devtools = true;
+console.log(Vue.config.devtools = true);
 
-new Vue({
+const app = new Vue({
     el: '#root',
     data: {
       user: {
@@ -88,18 +88,19 @@ new Vue({
           ],
         },
         ],
-          newMsgs: '',
-          methods: {
+       
+        methods: {
             
-            addMsg() {
-                const newMsgs = this.newMsgs.trim();
-                if (newMsgs) {
-                    this.newMsg.push({ text: newMsgs, done: false }
-                    );
-            }
-            this.newMsgs = '';
+          addMsg() {
+              const newMsgs = this.newMsgs.trim();
+              if (newMsgs) {
+                  this.messages.push({ text: newMsgs, visible: true});
+          }
+          this.newMsgs = '';
         },
-    },
-    
-  }
+        addItemToOrder: function(){
+          this.contacts.messages.push(newMsgs)
+  },
+}
+}
 })
