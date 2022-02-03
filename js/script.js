@@ -7,6 +7,7 @@ const app = new Vue({
         name: 'Nome Utente',
         avatar: '_io',
       },
+      currentContact: 0,
       contacts: [
         {
           name: 'Michele',
@@ -98,9 +99,9 @@ const app = new Vue({
           }
           this.newMsgs = '';
         },
-        addItemToOrder: function(){
-          this.contacts.messages.push(newMsgs)
-  },
+        
+          // this.contacts.messages.push(newMsgs)
+ 
 }
 }
 })

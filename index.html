@@ -34,7 +34,7 @@
                             
                             <div class="activechats">
                                 <ul id="activechats">
-                                    <li v-for="contact in contacts" :key="contact.name">
+                                    <li v-for="contact in contacts" :key="contact.name" @click='currentContact'>
                                          <img :src="'img' + '/avatar' + contact.avatar + '.jpg'" id="profpic"/>
                                         {{ contact.name }}
                                         <hr>
@@ -54,10 +54,11 @@
                             </div>
                         </header>
                         <main>
-                            <ul v-for= "messages in contacts" :key= "messages.contacts">
-                                <li v-for= "text in messages.text" :key= "text">
-                                    <div :class="messages.status">
-                                        <p>{{ contact.text }}</p>
+                            <ul>
+                                <li v-for= "message in contacts[currentContact].messages" :key= "text" >
+                                    <div :class="message.status">
+                                        <p>{{ message.text }}</p>
+                                        <time>{{ message.date }}</time>
                                     </div>
                                 </li>
                               </ul>

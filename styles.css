@@ -99,6 +99,8 @@ li {
     padding: 0;
 }
 
+
+
 /* Right side */
 
 .zappbody {
@@ -138,7 +140,8 @@ main {
 }
 
 .sent {
-    height: 80px;
+    top: 50%;
+    height: auto;
     width: 40%;
     background-color: green;
     border-radius: 18px;
@@ -149,7 +152,8 @@ main {
 }
 
 .received {
-    height: 80px;
+    top: 50%;
+    height: auto;
     width: 40%;
     background-color: honeydew;
     border-radius: 18px;
